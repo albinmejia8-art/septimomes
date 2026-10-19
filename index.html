@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071a39">
+  <meta name="description" content="Un pequeño universo azul para celebrar siete meses de amor. Un álbum musical lleno de recuerdos y cartas.">
+  <title>Felices 7 meses ♡ Un álbum para ti</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="starfield" id="starfield"></div>
+    <div class="bubbles" id="bubbles"></div>
+    <div class="bloom bloom-one"></div><div class="bloom bloom-two"></div>
+    <div class="jelly jelly-one">
+      <svg viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="jelly-cap1" cx="50%" cy="22%" r="75%"><stop stop-color="#f2faff" stop-opacity=".87"/><stop offset=".45" stop-color="#83c8ff" stop-opacity=".62"/><stop offset="1" stop-color="#4660da" stop-opacity=".23"/></radialGradient><filter id="jelly-glow1"><feGaussianBlur stdDeviation="7"/></filter></defs><ellipse cx="120" cy="108" rx="82" ry="78" fill="#9de4ff" opacity=".25" filter="url(#jelly-glow1)"/><g stroke="#9de7ff" stroke-width="5" opacity=".64" fill="none" stroke-linecap="round"><path class="jelly-tentacle t1" d="M65 151 Q39 198 66 273"/><path class="jelly-tentacle t2" d="M90 158 Q106 204 82 287"/><path class="jelly-tentacle t3" d="M120 160 Q126 213 114 281"/><path class="jelly-tentacle t4" d="M150 157 Q134 217 170 276"/><path class="jelly-tentacle t5" d="M173 150 Q196 213 187 265"/></g><path d="M38 121 C40 52 76 24 120 24 C167 24 205 57 203 122 C195 150 163 163 120 163 C77 163 47 150 38 121Z" fill="url(#jelly-cap1)" stroke="#beeaff" stroke-opacity=".7" stroke-width="2"/><path d="M50 123 Q80 143 111 127 Q141 148 188 126" fill="none" stroke="#e4f9ff" stroke-opacity=".65" stroke-width="6" stroke-linecap="round"/><ellipse cx="91" cy="83" rx="21" ry="43" fill="#fff" opacity=".22" transform="rotate(23 91 83)"/><g fill="#fff"><circle cx="65" cy="48" r="3"/><circle cx="174" cy="67" r="2.6"/></g></svg>
+    </div>
+    <div class="jelly jelly-two">
+      <svg viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="jelly-cap2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#daeeff" stop-opacity=".76"/><stop offset=".6" stop-color="#7db9fa" stop-opacity=".48"/><stop offset="1" stop-color="#ba9fff" stop-opacity=".25"/></linearGradient></defs><g stroke="#b2d6ff" stroke-width="4" opacity=".75" fill="none" stroke-linecap="round"><path class="jelly-tentacle t1" d="M57 157 Q76 221 54 275"/><path class="jelly-tentacle t2" d="M96 164 Q74 226 106 293"/><path class="jelly-tentacle t3" d="M129 165 Q156 214 137 280"/><path class="jelly-tentacle t4" d="M175 151 Q166 216 190 269"/></g><path d="M35 120 C43 59 77 29 119 29 C165 29 201 64 205 121 Q191 163 123 163 Q57 163 35 120Z" fill="url(#jelly-cap2)" stroke="#c5e8ff" stroke-opacity=".7" stroke-width="2"/><path d="M53 128 Q85 149 117 129 Q158 152 187 128" stroke="#fff" stroke-width="5" opacity=".36" fill="none"/></svg>
+    </div>
+    <div class="ocean-floor"></div>
+  </div>
+
+  <header class="topbar">
+    <button class="brand" type="button" data-go="0" aria-label="Regresar a la portada"><span class="brand-heart">♡</span><span>Nuestro pequeño universo</span></button>
+    <div class="header-right">
+      <span class="anniversary-pill"><span class="pill-dot"></span> 7 meses juntos</span>
+      <button class="icon-btn sound-toggle" type="button" id="sound-toggle" aria-label="Silenciar o activar música" title="Silenciar música">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15 9a5 5 0 0 1 0 6M18 6a9 9 0 0 1 0 12"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="app-main">
+    <section class="page cover-page active" id="page-0" aria-label="Portada de nuestro séptimo mes">
+      <div class="cover-wrap">
+        <div class="cover-copy">
+          <div class="eyebrow"><span class="sparkle">✦</span> UNA HISTORIA ESCRITA CON AMOR <span class="sparkle">✦</span></div>
+          <p class="script-note">Mi amor, esto es para ti...</p>
+          <h1>Felices <em>7 meses,</em><br><span class="cover-you">mi amor.</span></h1>
+          <p class="cover-intro" id="cover-intro"></p>
+          <button type="button" class="glow-button" id="begin-button"><span class="button-heart">♡</span> Abrir nuestro álbum <span class="arrow">↗</span></button>
+          <p class="cover-caption">Ponte cómoda, sube un poquito el volumen y disfruta ♫</p>
+        </div>
+        <div class="cover-scene" aria-label="Ilustración azul de Jiniret con estrellas y medusas">
+          <div class="scene-orbit orbit-one"></div><div class="scene-orbit orbit-two"></div>
+          <span class="scene-sparkles s1">✧</span><span class="scene-sparkles s2">✦</span><span class="scene-sparkles s3">✧</span><span class="scene-sparkles s4">✵</span>
+          <div class="plush-glow"></div>
+          <div class="plush-picture"><img src="assets/img/jiniret-reference.webp" alt="Jiniret, el tierno hurón de Hyunjin, en una escena azul mágica"></div>
+          <div class="scene-message"><span>☾</span> tú + yo + un cielo infinito <span>✩</span></div>
+          <div class="orbit-heart h1">♥</div><div class="orbit-heart h2">♡</div>
+        </div>
+      </div>
+      <div class="cover-lower"><span>DESLIZA NUESTRA HISTORIA CON CADA CANCIÓN</span><span class="animated-down">↓</span></div>
+    </section>
+    <div id="dynamic-pages"></div>
+  </main>
+
+  <nav class="chapter-nav" id="chapter-nav" aria-label="Capítulos del álbum"></nav>
+  <div class="player" id="player" aria-label="Reproductor musical" hidden>
+    <div class="player-track"><div class="player-cover" id="player-cover"></div><div class="player-track-name"><strong id="player-title">Nuestra canción</strong><small id="player-artist">Nuestro álbum</small></div></div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button class="player-icon" type="button" id="player-prev" aria-label="Canción anterior" title="Canción anterior">⏮</button>
+        <button class="play-toggle" type="button" id="play-toggle" aria-label="Reproducir o pausar música"><span id="play-icon">▶</span></button>
+        <button class="player-icon" type="button" id="player-next" aria-label="Canción siguiente" title="Canción siguiente">⏭</button>
+      </div>
+      <div class="progress-line"><span id="elapsed">0:00</span><input type="range" id="progress" aria-label="Posición de la canción" min="0" max="1000" value="0"><span id="duration">0:00</span></div>
+    </div>
+    <div class="player-right"><span class="playing-state" id="playing-state">Pausa</span><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+  </div>
+  <audio id="audio" preload="metadata"></audio>
+
+  <div class="modal-backdrop" id="edit-modal" hidden>
+    <div class="edit-dialog" role="dialog" aria-modal="true" aria-labelledby="edit-title">
+      <div class="edit-header"><div><p class="eyebrow">ESCRIBE DESDE EL CORAZÓN</p><h2 id="edit-title">Tu carta especial</h2></div><button class="icon-btn" type="button" id="close-edit" aria-label="Cerrar editor">✕</button></div>
+      <label class="editor-label" for="edit-quote">Frase romántica destacada</label><input id="edit-quote" type="text" maxlength="220" placeholder="Escribe tu frase favorita aquí...">
+      <label class="editor-label" for="edit-letter">Tu carta (puede ser tan larga como quieras)</label><textarea id="edit-letter" rows="12" placeholder="Escribe todo lo que sientes por ella..."></textarea>
+      <p class="edit-footnote">Tus cambios se guardan en este navegador. Para incluirlos en el regalo que enviarás, descarga tus textos y reemplaza el archivo <strong>config.js</strong> de la carpeta.</p>
+      <div class="edit-actions"><button type="button" class="subtle-button" id="cancel-edit">Cancelar</button><button type="button" class="glow-button" id="save-edit">♡ Guardar mi carta</button></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="mini-help"><button id="help-button" type="button" aria-label="Cómo personalizar el álbum" title="Cómo personalizar">?</button></div>
+  <div class="help-popover" id="help-popover" hidden><strong>Personaliza este regalo 💙</strong><p>Puedes editar cada carta y subir una foto. Los cambios se quedan en este navegador. Antes de enviar la página, pulsa «Descargar mis textos» y reemplaza <b>config.js</b> en tu carpeta para llevarte los mensajes escritos.</p><button id="download-texts" type="button" class="outline-small">↓ Descargar mis textos</button><button id="close-help" type="button" class="help-close">Cerrar</button></div>
+</body>
+</html>

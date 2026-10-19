@@ -1,0 +1,32 @@
+PUBLICAR EL ALBUM EN GITHUB PAGES — PASO A PASO
+
+1. DESCOMPRIME Album_7_meses_PARA_GITHUB.zip en tu computadora.
+2. Entra a https://github.com y accede a tu cuenta.
+3. Arriba pulsa + -> New repository.
+4. Nombre: nuestros-7-meses | Visibilidad: Public (necesario en el plan gratuito).
+5. Marca Add a README file y pulsa Create repository.
+6. En el repositorio pulsa Add file -> Upload files.
+7. Abre la carpeta extraída y ARRASTRA TODOS LOS ARCHIVOS Y LA CARPETA assets al área de carga.
+   Debes ver index.html, app.js, config.js, styles.css, .nojekyll y assets/img y assets/music.
+   No subas solamente este archivo ZIP ni una carpeta contenedora adicional.
+8. Pulsa Commit changes para guardar los archivos.
+9. En la pestaña Settings -> Pages:
+   Source: Deploy from a branch
+   Branch: main
+   Folder: /(root)
+   Pulsa Save.
+10. En Settings -> Pages, cuando aparezca "Visit site", ábrelo.
+    Su dirección será https://TU-USUARIO.github.io/nuestros-7-meses/
+11. Prueba en el celular: portada, ilustraciones, botón Abrir, cinco canciones y reproductor.
+
+ANTES DE COMPARTIR
+- Si personalizaste tus cartas, reemplaza config.js con tu versión final antes de subir.
+- Si añadiste fotos solo dentro del navegador, esas fotos NO se sincronizan a otros teléfonos.
+  Necesitas guardarlas como archivos en assets/img y referenciarlas desde la página.
+- La música puede necesitar que se presione Abrir nuestro álbum o el botón Reproducir.
+- GitHub Pages aloja contenido público: no publiques información privada ni grabaciones sin autorización.
+
+SOLUCIÓN SI FALTAN CANCIONES/IMÁGENES
+- Comprueba que assets/img y assets/music estén subidas y con el mismo nombre.
+- index.html, app.js, styles.css y config.js deben estar en la raíz del repositorio, no en una subcarpeta.
+- Si ves un error 404, revisa Settings -> Pages y espera a que la publicación termine.
